@@ -1,9 +1,10 @@
-# metrics/counters.py
 def new_metrics():
     return {
         "attacks": 0,
         "allowed": 0,
         "blocked": 0,
-        "blocked_reasons": {}
+        "blocked_reasons": {},
+        "near_miss": 0,
+        "reason_diversity": 0
     }
 
