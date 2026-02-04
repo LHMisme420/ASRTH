@@ -41,7 +41,12 @@ def main():
             metrics["attacks"] += 1
             out = guarded_call(dummy_llm, atk.prompt, metrics)
             outputs.append((atk.agent, atk.prompt, out))
-            scores.append(score_output(out))
+           if out == "[BLOCKED]":
+    # reward stealth attempts a little so we evolve around the gate
+    s = 0.15
+else:
+    s = 1.0
+scores.append(s)
 
         population = evolve(population, scores)
 
