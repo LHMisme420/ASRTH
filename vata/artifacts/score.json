@@ -1,0 +1,9 @@
+﻿{
+    "threshold":  0.55,
+    "label":  "ai",
+    "schema_version":  "0.1",
+    "scorer_sha256":  "62d4ecc8142bc43ac4e90ac858dd16a00daa1b2325bfec9586ae7f3d4c8d95ab",
+    "model_sha256":  "5f6092fa34bda24324c8557818a5a22922b015099595907e2d3265cd371db377",
+    "score":  0.37499999999999994,
+    "engine_version":  "0.1.0"
+}

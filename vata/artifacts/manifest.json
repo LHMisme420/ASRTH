@@ -1,0 +1,20 @@
+﻿{
+    "inputs":  {
+                   "input.txt":  "5b42a8f4dc06926fe0ce61419dd60268e1115f530b2ea293f25780de43211fda"
+               },
+    "code":  {
+                 "scorer_file":  "score.py",
+                 "scorer_sha256":  "62d4ecc8142bc43ac4e90ac858dd16a00daa1b2325bfec9586ae7f3d4c8d95ab"
+             },
+    "timestamp_utc":  "2026-02-07T21:59:45.2339321Z",
+    "schema_version":  "0.1",
+    "artifacts":  {
+                      "score.json":  "87625311730e92213f6e3d3af82dfdb0ebf514f3a30117c5837fc83257733a46",
+                      "features.json":  "b63a74d76c3bbe648af464b5662b5115a1f0d84b0fe683edc3e0ca398615b1ed"
+                  },
+    "model":  {
+                  "model_sha256":  "5f6092fa34bda24324c8557818a5a22922b015099595907e2d3265cd371db377",
+                  "model_file":  "fusionnet_nolf.pkl"
+              },
+    "engine_version":  "0.1.0"
+}

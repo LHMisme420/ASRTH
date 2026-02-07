@@ -1,0 +1,8 @@
+﻿{
+    "schema_version":  "0.1",
+    "engine_version":  "0.1.0",
+    "features":  {
+                     "placeholder":  1
+                 },
+    "input_sha256":  "5b42a8f4dc06926fe0ce61419dd60268e1115f530b2ea293f25780de43211fda"
+}
