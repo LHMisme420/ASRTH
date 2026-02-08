@@ -1,56 +1,47 @@
-# ASRTH — Adversarial Swarm Red-Team Harness
+# VATA-Forensics
 
-Multi-agent evolutionary framework designed to pressure-test **runtime overlays**, **policy gates**, and **jailbreak defenses** in LLMs and agentic systems.
+**VATA-Forensics** is a lightweight, reproducible safety-evaluation harness for
+testing AI systems under adversarial conditions with a cryptographic-style
+provenance mindset.
 
-Swarm of specialized agents collaboratively evolves adversarial prompts/strategies to bypass safeguards — async, evolvable, measurable.
+It combines:
 
-**Status**: Early prototype / research harness (proof-of-concept stage)
+- A **Guardian Gate** (pre-model PII filter)
+- A **Swarm Harness** (interactive prompt loop)
+- **Structured Logging** (JSONL)
+- **Scoring & Categorization** (model vs infrastructure failures)
+- **CSV + Summary Export**
 
-## Core Idea
+The goal is to produce *verifiable, auditable evidence* of model behavior,
+rather than screenshots or anecdotal claims.
 
-Many agents with different roles (jailbreakers, drifters, evaluators, mutators) run in parallel → evolve attack chains over generations → find weak points in policy enforcement layers.
+---
 
-Inspired by: evolutionary algorithms + multi-agent debate + red-teaming swarms.
+## Architecture
 
-## Features (current)
+## On-chain provenance proof (Sepolia)
 
-- Asynchronous agent swarm orchestration
-- Evolutionary prompt/strategy mutation
-- Context rollover & memory drift simulation
-- Policy gate simulation + guarded LLM wrapper
-- Success/failure counters & basic metrics
-- Modular agent types (jailbreaker, drift, etc.)
+This repo anchors a Merkle root to an on-chain MerkleAnchor contract and provides scripts to verify:
 
-## Requirements
+- Verify the on-chain anchored root:
+  powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_anchor.ps1
 
-- Python 3.10+
+- Verify local snapshot matches the on-chain root (end-to-end):
+  powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_full.ps1
 
+## On-chain provenance proof (Sepolia)
 
-## Quick Start (Local)
+This repo produces a deterministic Merkle root for the current snapshot and anchors it on-chain.
 
-```bash
-git clone https://github.com/LHMisme420/ASRTH.git
-cd ASRTH
-pip install -r requirements.txt          # create this file first
-python run_harness.py
-ASRTH/
-├── agents/             # agent role implementations
-├── vata/               # (likely variation / attack tree logic)
-├── base.py             # core abstractions
-├── orchestrator.py     # swarm coordinator
-├── evolution.py        # mutation & selection logic
-├── guarded_llm.py      # policy-wrapped LLM interface
-├── policy_gate.py      # simulated defense layer
-├── jailbreaker.py      # primary attack agent
-├── drift_agent.py      # context/memory drift agent
-├── context_rollover.py # long-conversation simulation
-├── counters.py         # metrics tracking
-├── run_harness.py      # main entry point
-├── PROJECT_PRINCIPLES.md
-└── SPEC_ARTIFACT_FORMAT.md
-## Quick Start (Local)
+- Contract: 0x834AA2587c311E773851ecBB1cDC4eFAaA98c740
+- Merkle root: 0xe02ea3dcbfb339f25f086cad160827149274422d581965102aaed063ca814775
+- Transactions:
+  - 0x2f5f15c60082b3a51ac0466fc3d2c6a6e984a80e5d11b7bab7aeff032d9e06ee
+  - 0x844c187fbde5346ba86f18d586c353fe538c5657e03bef209daf3de867da4b8d
 
-1. Clone & enter repo  
-```bash
-git clone https://github.com/LHMisme420/ASRTH.git
-cd ASRTH
+### Verify
+- On-chain root:
+  powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_anchor.ps1
+
+- End-to-end (local snapshot matches on-chain):
+  powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_full.ps1
