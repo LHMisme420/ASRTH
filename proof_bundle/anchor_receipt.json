@@ -1,0 +1,10 @@
+{
+  "network": "sepolia",
+  "contract": "0x834AA2587c311E773851ecBB1cDC4eFAaA98c740",
+  "merkle_root": "0xe02ea3dcbfb339f25f086cad160827149274422d581965102aaed063ca814775",
+  "anchor_txs": [
+    "0xab95e4d606fe0489b7784daed7d22d6b1dd4bc8f4fbb037ed6508bce88c223ff",
+    "0x000760b30fddfc1a9c4d86a34f1fe74c6890c85b3648b840ae3af7fe21cf2854",
+    "2f5f15c60082b3a51ac0466fc3d2c6a6e984a80e5d11b7bab7aeff032d9e06ee"
+  ]
+}
