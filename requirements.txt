@@ -6,3 +6,6 @@ asyncio>=3.4.3  # usually already in stdlib, but explicit
 aiohttp>=3.8.0
 rich>=13.0.0     # for nice console output
 python-dotenv>=1.0.0
+litellm>=1.57.0  # latest stable as of 2026
+rich>=13.0.0
+
