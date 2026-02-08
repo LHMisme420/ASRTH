@@ -1,0 +1,17 @@
+{
+  "id": "17",
+  "leaf_sha256_hex": "51d81422866bdf47fcb8d5d310a59edbf771d082d35612451082e2698e6ad69d",
+  "proof_sha256_hex": [
+    "06ec64c4391ad32babafe8c83464e08c561e45b68ab5908d0870b0c9114a2176",
+    "e24cb1e7a9e75906c27f3ab5a0064c114ce27ccece81dc06a2376f2d4fa27151",
+    "32bebab9d7a29aa437962ab167d9dab8387343283dfa50ee4ca98f5ee53dcac1",
+    "f5cad6ad6b3af6b6cccff060707b009ca7bfc31348f868d4ba2ea056ccefc969",
+    "d561dad5921571a6c9cb361ec21e093a409785556d5d68f86d88d2dbe12c2d45"
+  ],
+  "root_sha256_hex": "e02ea3dcbfb339f25f086cad160827149274422d581965102aaed063ca814775",
+  "leaf_index": 17,
+  "leaf_count": 20,
+  "hash_function": "sha256",
+  "pair_rule": "sha256(left||right)",
+  "odd_rule": "duplicate_last"
+}
