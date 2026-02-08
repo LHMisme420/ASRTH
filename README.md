@@ -61,3 +61,19 @@ Verify:
   powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_anchor.ps1
 - End-to-end:
   powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_full.ps1
+
+## Verify inclusion of a single record
+
+1) Generate proofs (or use the committed ./proofs folder):
+   python .\generate_proofs.py
+
+2) Verify any proof file:
+   python .\verify_inclusion.py .\proofs\0.json
+
+Expected output: VALID
+
+This verifies membership against the Merkle root:
+0xe02ea3dcbfb339f25f086cad160827149274422d581965102aaed063ca814775
+
+On-chain verification:
+powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_anchor.ps1
