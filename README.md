@@ -48,3 +48,9 @@ ASRTH/
 ├── run_harness.py      # main entry point
 ├── PROJECT_PRINCIPLES.md
 └── SPEC_ARTIFACT_FORMAT.md
+## Quick Start (Local)
+
+1. Clone & enter repo  
+```bash
+git clone https://github.com/LHMisme420/ASRTH.git
+cd ASRTH
