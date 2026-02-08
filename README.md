@@ -24,7 +24,7 @@ Inspired by: evolutionary algorithms + multi-agent debate + red-teaming swarms.
 ## Requirements
 
 - Python 3.10+
-- (Add your actual deps here once you have requirements.txt)
+
 
 ## Quick Start (Local)
 
