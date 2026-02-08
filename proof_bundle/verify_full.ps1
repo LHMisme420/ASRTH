@@ -16,7 +16,7 @@ Write-Host "`nOn-chain merkle root:"
 Write-Host $onchain
 
 # Local root from your pipeline (no need to anchor; we just read the root it computes)
-$localJson = python .\anchor_root_only.py | ConvertFrom-Json
+$localJson = python .\anchor_root_only.py --compute-only | ConvertFrom-Json
 $local = ($localJson.merkle_root).ToLower()
 
 Write-Host "`nLocal recomputed merkle root:"
@@ -29,4 +29,5 @@ if ($local -eq $onchain) {
   Write-Host "`n❌ FAILED: local root does NOT match on-chain root"
   exit 2
 }
+
 
