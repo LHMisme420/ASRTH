@@ -77,3 +77,21 @@ This verifies membership against the Merkle root:
 
 On-chain verification:
 powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_anchor.ps1
+
+## Verify inclusion of a single record (Merkle proof)
+
+This repo can generate Merkle inclusion proofs for individual record-hashes that belong to the anchored snapshot.
+
+Anchored Merkle root (Sepolia):
+0xe02ea3dcbfb339f25f086cad160827149274422d581965102aaed063ca814775
+
+### Generate proofs
+python .\generate_proofs.py
+
+### Verify a proof
+python .\verify_inclusion.py .\proofs\0.json
+
+Expected output: VALID
+
+### Verify the root is anchored on-chain
+powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_anchor.ps1
