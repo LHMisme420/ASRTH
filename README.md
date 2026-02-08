@@ -45,3 +45,19 @@ This repo produces a deterministic Merkle root for the current snapshot and anch
 
 - End-to-end (local snapshot matches on-chain):
   powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_full.ps1
+
+## On-chain Provenance Proof (Sepolia)
+
+This repository produces a deterministic Merkle root for its current snapshot and anchors it on-chain.
+
+Contract:
+0x834AA2587c311E773851ecBB1cDC4eFAaA98c740
+
+Merkle Root:
+0xe02ea3dcbfb339f25f086cad160827149274422d581965102aaed063ca814775
+
+Verify:
+- On-chain root:
+  powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_anchor.ps1
+- End-to-end:
+  powershell -ExecutionPolicy Bypass -File .\proof_bundle\verify_full.ps1
