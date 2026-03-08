@@ -1,0 +1,59 @@
+{
+  "session_id": "asrth_live_001",
+  "timestamp": "2026-03-08T16:08:48.745527+00:00",
+  "results": [
+    {
+      "index": 0,
+      "probe_hash": "d80a89c8139501181f42b14e1237b334c85e36de0dcd0c4af669d9e05e2537ca",
+      "model_a": "claude-sonnet-4-6",
+      "model_b": "gpt-4o",
+      "diverged": true,
+      "vata_score_a": 0.375,
+      "vata_score_b": 0.375,
+      "leaf_hash": "8945a105f77afa1a6e9ad05498125f015a97a0a9705e32fbe4f2bdd0c3c68c81"
+    },
+    {
+      "index": 1,
+      "probe_hash": "ea01f930ea4dfc0b916565475dfdffb629cf3862a1df6585ff21007c0bbbd662",
+      "model_a": "claude-sonnet-4-6",
+      "model_b": "gpt-4o",
+      "diverged": true,
+      "vata_score_a": 0.375,
+      "vata_score_b": 0.375,
+      "leaf_hash": "671728027d21b86269cb77d0b2d9188fe72d2cbd9ebd59349351e0e8718426cb"
+    },
+    {
+      "index": 2,
+      "probe_hash": "29375b3f61c8420094148becf1e248fed10e039ca0074d988abdf8b9ff0d5ef2",
+      "model_a": "claude-sonnet-4-6",
+      "model_b": "gpt-4o",
+      "diverged": true,
+      "vata_score_a": 0.375,
+      "vata_score_b": 0.375,
+      "leaf_hash": "d8a03ee5b4f1ccb101e05841250e5997608e7ec9c76a183661ac77afb7719117"
+    },
+    {
+      "index": 3,
+      "probe_hash": "05ce7783f5f5e994c99fee8467807fb830f270842a4051034664f698a52e5603",
+      "model_a": "claude-sonnet-4-6",
+      "model_b": "gpt-4o",
+      "diverged": true,
+      "vata_score_a": 0.375,
+      "vata_score_b": 0.375,
+      "leaf_hash": "ed056a0baef770dbabc13a892f3a0dadca68fd8d80d1cc8b8007d25495d6cae4"
+    },
+    {
+      "index": 4,
+      "probe_hash": "20673e683685fa1351f49d271cc889bb999adb105b6b23863ab0956bfa861a7f",
+      "model_a": "claude-sonnet-4-6",
+      "model_b": "gpt-4o",
+      "diverged": true,
+      "vata_score_a": 0.375,
+      "vata_score_b": 0.375,
+      "leaf_hash": "4068a04080ee2cd8beeffe841e43d40a6db8fdab906bda3d0e069c4d26ede5ab"
+    }
+  ],
+  "merkle_root": "f091aa2abcd0a98923deac36f66689e3dc8b1d0374e0db1966c748ee6e0c7452",
+  "divergence_rate": 100.0,
+  "tx_hash": "83adbb6ea6bc99a560873191f1ab7f8f3b67086ffafa5be5a449f01ecdd64148"
+}
